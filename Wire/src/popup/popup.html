@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../theme.css">
+  <link rel="stylesheet" href="popup.css">
+  <title>Wire</title>
+</head>
+<body>
+  <div class="pop">
+    <header class="pop-head">
+      <div class="brand">
+        <img class="glyph" src="../../icons/icon48.png" alt="">
+        <span class="name">Wire<b>·</b>FinSMEs</span>
+      </div>
+      <span id="pill" class="pill" data-status="idle"><span class="dot"></span><span id="pillText">idle</span></span>
+    </header>
+
+    <div class="wire" id="wire">
+      <span class="beacon"></span>
+      <span class="url" id="wireUrl">Ready to collect.</span>
+    </div>
+
+    <div class="pop-stats">
+      <div class="stat">
+        <div class="num accent" id="statNew">0</div>
+        <div class="lbl">New this run</div>
+      </div>
+      <div class="stat">
+        <div class="num" id="statTotal">0</div>
+        <div class="lbl">Total tracked</div>
+      </div>
+    </div>
+
+    <div class="pop-actions">
+      <button class="btn btn-primary" id="btnQuick">Collect current month</button>
+      <button class="btn btn-danger" id="btnStop" hidden>Stop</button>
+      <button class="btn" id="btnResume" hidden>Complete check</button>
+    </div>
+
+    <button class="btn btn-ghost pop-dash" id="btnDash">Open dashboard →</button>
+  </div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
