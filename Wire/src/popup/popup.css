@@ -1,0 +1,29 @@
+.pop {
+  width: 320px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.pop-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pop-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.pop-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pop-actions .btn { width: 100%; }
+.pop-dash {
+  width: 100%;
+  color: var(--muted);
+  font-size: 12px;
+  padding: 7px;
+}
